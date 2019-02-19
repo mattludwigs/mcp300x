@@ -1,5 +1,7 @@
 # MCP300X
 
+[![CircleCI](https://circleci.com/gh/mattludwigs/mcp300x.svg?style=svg)](https://circleci.com/gh/mattludwigs/mcp300x)
+
 Library for working the MCP300X Analog-to-Digitial Converters.
 
 ## Road map
