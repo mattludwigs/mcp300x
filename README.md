@@ -8,7 +8,7 @@ This library is under active development and supports single channel
 reads using the MCP3008 ADC. So, here is the goals of this library:
 
 - [ ] Support MCP3002
-- [ ] Support MCP3008
+- [ ] Support MCP3004
 - [ ] Support Differential Reads
 - [ ] Support MSBF
 
