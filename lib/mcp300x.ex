@@ -32,7 +32,7 @@ defmodule MCP300X do
 
   - `:convert_func` - default `MCP300X.id/1`
   """
-  @spec read_channel(binary() | String.t, Driver.t(), channel_number, [read_opt]) ::
+  @spec read_channel(binary() | String.t(), Driver.t(), channel_number, [read_opt]) ::
           {:ok, non_neg_integer()}
   def read_channel(bus_name, driver, channel_number, opts \\ []) do
     opts = merge_read_opts(opts)
