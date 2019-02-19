@@ -10,7 +10,8 @@ defmodule MCP300X.MixProject do
       deps: deps(),
       description: description(),
       package: package(),
-      docs: [extras: ["README.md"], main: "readme"]
+      docs: [extras: ["README.md"], main: "readme"],
+      dialyzer: dialyzer()
     ]
   end
 
@@ -39,5 +40,11 @@ defmodule MCP300X.MixProject do
 
   defp description() do
     "An Elixir library for working with MCP300X family of ADCs"
+  end
+
+  defp dialyzer() do
+    [
+      flags: [:unmatched_returns, :error_handling, :race_conditions, :underspecs]
+    ]
   end
 end

@@ -45,7 +45,7 @@ defmodule MCP300X.Server do
   Start the server.
 
   Takes a SPI bus name, a `Driver.t()`, and `opt`.
-  
+
   If the SPI bus is invalid you will get `{:error, :access_denied}` when
   trying to start this process.
   """
@@ -72,8 +72,6 @@ defmodule MCP300X.Server do
     case SPI.open(bus_name) do
       {:ok, spi_bus} ->
         {:ok, %State{driver: driver, spi_bus: spi_bus, opts: opts}}
-      {:error, _} = error->
-        {:stop, error}
     end
   end
 
