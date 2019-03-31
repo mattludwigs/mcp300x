@@ -24,7 +24,7 @@ defmodule MCP300X.MixProject do
 
   defp deps do
     [
-      {:circuits_spi, "~> 0.1.0"},
+      {:circuits_spi, "~> 0.1.3"},
       {:ex_doc, "~> 0.19", only: [:test, :dev], runtime: false},
       {:dialyxir, "~> 1.0.0-rc.4", only: [:test, :dev], runtime: false}
     ]
