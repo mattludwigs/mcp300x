@@ -61,7 +61,7 @@ by adding `mcp300x` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:mcp300x, "~> 0.1.0"}
+    {:mcp300x, "~> 0.1.1"}
   ]
 end
 ```
